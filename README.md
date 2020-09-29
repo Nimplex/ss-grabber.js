@@ -23,4 +23,4 @@ module.exports = {
 ```
 
 To run bot use
-`node src/index.js'
+`node src/index.js`
