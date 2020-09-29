@@ -1,4 +1,5 @@
 # ss-grabber.js
+Discord.js bot that sends images from https://prnt.sc to discord chat. 
 
 ## Requirments: 
 ```
