@@ -3,7 +3,7 @@ const fetch              = require('node-fetch')
 const { token, prefix }  = require('../config')
 const { floor, random }  = Math
 
-const characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'f', 'v', 'x','w','y','z']
+const characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'w', 'y', 'z']
 const client = new Client()
 
 client.once('ready', () => console.log(`${client.user.tag} is ready!`))
