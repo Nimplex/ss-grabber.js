@@ -25,3 +25,6 @@ module.exports = {
 
 To run bot use
 `node src/index.js`
+
+## Contact:
+Discord: `Nimplex#6232`
