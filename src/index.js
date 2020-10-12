@@ -15,7 +15,8 @@ client.on('message', async message => {
     for (let i=0; i<2; ++i) id += floor(random()*9)
     const pattern = RegExp("<img.+?src=[\"'](.+?)[\"'].*?>")
     const website = await fetch(`https://prnt.sc/${id}`).then(res => res.text()).then(async body => {
-      const url = await pattern.exec(body)[1]
+      let url = await pattern.exec(body)[1]
+      if (url.startsWith('//')) url = `https:${url}`
       const embed = new MessageEmbed()
         .setTitle('Random pic')
         .setImage(url)
